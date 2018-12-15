@@ -1,0 +1,42 @@
+$font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans",
+  "Helvetica Neue", sans-serif;
+
+@font-face {
+  font-family: "Exo - Thin";
+  font-weight: 100;
+  src: url(../fonts/Exo/Exo-Thin.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Exo/Exo-Regular.ttf);
+  font-display: swap;
+}
+html {
+  font-size: 62.5%;
+}
+@import "./_vars";
+// @import './mixin/_page-block__container';
+@import "./includes/buttons";
+@import "./includes/_header";
+@import "./includes/_footer";
+
+* {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $black;
+  color: $white;
+  overflow-x: hidden;
+}

@@ -1,0 +1,49 @@
+{
+  "name": "html-projects",
+  "version": "1.0.0",
+  "description": "![LAYOUT.png](https://raw.githubusercontent.com/greenmoon1558/html-project1/master/pantomax_lp_new.psd.png)",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node server.js",
+    "dev": "webpack --mode development",
+    "beautify": "html dist/*.html --indent-size 2",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greenmoon1558/html_proj.git"
+  },
+  "keywords": [
+    "html",
+    "layouts"
+  ],
+  "author": "Natalia Zhydejkina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greenmoon1558/html_proj/issues"
+  },
+  "homepage": "https://github.com/greenmoon1558/html_proj#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-cli": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.10.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "normalize.css": "^8.0.1",
+    "serve-static": "^1.13.2"
+  }
+}
