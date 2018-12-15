@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Exo - Thin";
+  font-weight: 100;
+  src: url(../fonts/Exo/Exo-Thin.ttf);
+  font-display: swap; }
+
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Exo/Exo-Regular.ttf);
+  font-display: swap; }
+
+html {
+  font-size: 62.5%; }
+
+.button {
+  background-color: #ff6d6d;
+  border-radius: 3px;
+  color: #fff;
+  font-family: "Exo", sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  border: none;
+  letter-spacing: 0.3rem; }
+
+.header {
+  display: flex;
+  align-items: center; }
+  .header__button {
+    width: 19rem;
+    height: 5rem;
+    margin: 3.8rem auto 1.5rem; }
+  .header__content {
+    height: 100vh;
+    width: 100vw;
+    min-height: 81rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .header__headline {
+    max-width: 74rem;
+    margin: 21.25rem auto 4rem;
+    color: #282828;
+    font-family: "Exo - Thin", sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 7.7rem;
+    letter-spacing: 0.2rem; }
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  min-height: 81rem; }
+
+.video {
+  min-width: 100vw;
+  min-height: 100vh; }
+  .video__wrapper {
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    min-height: 81rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+  .video__button--circle {
+    opacity: 0.7; }
+    .video__button--circle:hover, .video__button--circle:focus {
+      opacity: 1; }
+  .video__btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    height: 6rem;
+    width: 6rem;
+    outline: none; }
+  .video-media {
+    height: 100vh;
+    width: 100%;
+    min-height: 81rem;
+    object-fit: cover; }
+  .video img {
+    display: none; }
+
+.footnote {
+  opacity: 0.6;
+  color: #282828;
+  font-family: "Exo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400; }
+
+.ytp-chrome-top, .ytp-scroll-min {
+  display: none !important; }
+
+* {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden; }
+
+/*# sourceMappingURL=style.bundle.css.map*/
