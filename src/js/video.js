@@ -12,19 +12,15 @@ let video = () => {
         let media = video.querySelector('.video-media');
         let button = document.querySelector(".video__btn");
         let videoSource = video.querySelector(".video-source");
-        button.addEventListener("click", clickBtn);
+        button.addEventListener("click", clickBtn, false);
         function clickBtn() {
-            if (videoSource.paused) {
-                videoSource.play();
-                showVideo();
-            }
-            else {
-                videoSource.pause();
-                console.log("pause")
-            }
+            showVideo();
+            if (!videoSource.paused) videoSource.play();
+            else videoSource.pause();
             button.classList.toggle("pause");
            
         };
+
         let once = function(fn, context) {
             var result;
 
@@ -37,11 +33,10 @@ let video = () => {
                 return result;
             };
         }
-        let showVideo = once(() => {
-            console.log("hide")
-            link.remove();
-            videoSource.classList.add("video-media");
+        let showVideo = once(function() {
             videoSource.classList.remove("video-media--hide");
+            videoSource.classList.add("video-media");
+            link.remove();
         });
        
         link.removeAttribute('href');
