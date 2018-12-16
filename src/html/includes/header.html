@@ -1,47 +1,38 @@
 <header class="header container">
   <div class="video__wrapper">
     <div class="video">
-      <!-- <video autoplay="" loop="" muted="" data-youtube-id="zwYzKcQr9qo" class="video-media" src="blob:https://www.youtube.com/9eabb51d-ee24-4b59-8774-4cc9efe3bdce" >
-      
-      </video> -->
-      <video controls="controls" loop="" class="video-media" poster="https://i.ytimg.com/vi/zwYzKcQr9qo/maxresdefault.jpg"
-        >
-        <source src="uploads/background.mp4" type="video/mp4">
-    
-      </video>
-    <!-- <iframe frameborder="0" allowfullscreen="1" allow="autoplay" class="video-media"
-      src="https://www.youtube.com/embed/zwYzKcQr9qo?autoplay=1&amp;loop=1&amp;modestbranding=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=mbYTP_bgndVideo&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1"
-      ></iframe> -->
-      <!-- <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-      </iframe> -->
-     
-      <!-- <iframe allowfullscreen height="100vh" allow="autoplay" frameborder="0" 
-      src="https://www.youtube.com/embed/DSLgAsrcpGQ?autoplay=1&controls=0&loop=1&rel=0&showinfo=0&autohide=1&disablekb=1"
-        class="video-media"></iframe> -->
-        <!-- <video autoplay="" loop="" muted="" 
-          data-youtube-id="zwYzKcQr9qo" 
-          class="video-media" >
-          <source src="blob:https://www.youtube.com/9eabb51d-ee24-4b59-8774-4cc9efe3bdce" type="video/mp4">
-        </video> 
-      https://www.youtube.com/embed/gO2cauFlibQ?autoplay=1&amp;loop=1&amp;playlist=gO2cauFlibQ&amp;modestbranding=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=mbYTP_bgndVideo&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1
-      -->
-        <!-- <iframe class="videoContainer__video" width="1920" height="1080" src="http://www.youtube.com/embed/IsBInsOj8TY?modestbranding=1&autoplay=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1&playlist=IsBInsOj8TY"
-          frameborder="0"></iframe> -->
-      <!-- <a href="https://www.youtube.com/watch?v=zwYzKcQr9qo" class="video__link">
+    <video autoplay loop preload="none" class="video-source video-media--hide">
+    <source src="uploads/background.mp4" type="video/mp4" />
+    <source src="uploads/background.webm" type="video/webm">
+      Your browser does not support HTML5 video.
+    </video>
+
+      <!-- <video
+       
+        autoplay
+        muted 
+        controls="controls"
+        loop
+       
+      >
+        <source src="uploads/background.mp4" type="video/mp4" />
+       <source src="uploads/background.webm" type="video/webm"> -->
+      <!-- </video> --> 
+
+      <a href="https://www.youtube.com/watch?v=zwYzKcQr9qo" class="video__link">
         <picture class="video-media__container">
           <source
             class="video-media__source"
             srcset="https://i.ytimg.com/vi_webp/zwYzKcQr9qo/maxresdefault.webp"
             type="image/webp"
           />
-          poster="https://i.ytimg.com/vi/zwYzKcQr9qo/maxresdefault.jpg"
           <img
             class="video-media"
             src="https://i.ytimg.com/vi/zwYzKcQr9qo/maxresdefault.jpg"
             alt="nature video image"
           />
         </picture>
-      </a> -->
+      </a>
     </div>
     <div class="header__content">
       <h1 class="header__headline">
@@ -57,19 +48,32 @@
         >
           <defs>
             <path
+              class="video__button--circle"
               id="8ob9a"
               d="M720.5 406c16.292 0 29.5 13.208 29.5 29.5S736.792 465 720.5 465 691 451.792 691 435.5s13.208-29.5 29.5-29.5z"
             />
             <path
-             id="8ob9b"
+              class="video__button--triangle"
+              id="8ob9b"
               d="M731 435.5l-17 9.5v-19z"
+            />
+            <path
+              class="video__button--pause"
+              id="8ob9c"
+              d="M731 435.5 l0 9.5l-9 0l0 -19l9.1 0z"
+            />
+            <path
+              class="video__button--pause"
+              id="8ob9d"
+              d="M718 435.5 l0 9.5l-9 0l0 -19l9.1 0z"
             />
           </defs>
           <g>
-            <g transform="translate(-691 -406)">
-              <g ><use fill="#323969" class="video__button--circle" xlink:href="#8ob9a" /></g>
-              <g opacity=".8"><use  class="video__button--triangle"
-               fill="#f4f5f7" xlink:href="#8ob9b" /></g>
+            <g opacity="1" transform="translate(-691 -406)">
+              <g opacity="1"><use fill="#323969" xlink:href="#8ob9a" /></g>
+              <g opacity="1"><use fill="#f4f5f7" xlink:href="#8ob9b" /></g>
+              <g opacity="1"><use fill="#f4f5f7" xlink:href="#8ob9c" /></g>
+              <g opacity="1"><use fill="#f4f5f7" xlink:href="#8ob9d" /></g>
             </g>
           </g>
         </svg>

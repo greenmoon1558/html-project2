@@ -2,6 +2,9 @@
             <defs>
                 <path class="video__button--circle" id="8ob9a" d="M720.5 406c16.292 0 29.5 13.208 29.5 29.5S736.792 465 720.5 465 691 451.792 691 435.5s13.208-29.5 29.5-29.5z" />
                 <path class="video__button--triangle"  id="8ob9b" d="M731 435.5l-17 9.5v-19z" />
+                <path class="video__button--pause" id="8ob9c" d="M731 435.5 l0 9.5l-9 0l0 -19l9.1 0z"/>
+		        <path class="video__button--pause" id="8ob9d" d="M718 435.5 l0 9.5l-9 0l0 -19l9.1 0z"/>
+           
             </defs>
             <g>
                 <g opacity=".6" transform="translate(-691 -406)">
@@ -10,6 +13,12 @@
                     </g>
                     <g opacity=".6">
                         <use fill="#f4f5f7" xlink:href="#8ob9b" />
+                    </g>
+                      <g opacity=".6">
+                        <use fill="#f4f5f7" xlink:href="#8ob9c" />
+                    </g>
+                      <g opacity=".6">
+                        <use fill="#f4f5f7" xlink:href="#8ob9d" />
                     </g>
                 </g>
             </g>

@@ -41,6 +41,7 @@
   height: 100vh;
   min-height: 81rem;
 }
+
 .video {
   min-width: 100vw;
   min-height: 100vh;
@@ -58,10 +59,14 @@
     &link {
     }
     &button {
+      &--pause {
+        opacity: 0;
+      }
       &--circle {
-        opacity: 0.7;
+        opacity: 0.6;
         &:hover,
-        &:focus {
+        &:focus,
+        &:active {
           opacity: 1;
         }
       }
@@ -75,17 +80,29 @@
       height: 6rem;
       width: 6rem;
       outline: none;
+       &.pause {
+        .video__button{
+          &--pause {
+            opacity: 0.8;
+          }
+          &--triangle {
+            opacity: 0;
+          }
+        }
+      }
     }
   }
   &-media {
+    &--hide {
+      display: none;
+    }
     height: 100vh;
     width: 100%;
     min-height: 81rem;
     object-fit: cover;
   }
-  img{
-    display: none;
-  }
+ 
+  
 }
 
 .footnote {
@@ -96,6 +113,3 @@
   font-weight: 400;
 }
 
-.ytp-chrome-top, .ytp-scroll-min {
-  display: none!important;
-}
