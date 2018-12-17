@@ -1,0 +1,43 @@
+$rightColumnHeight: 48.6rem;
+$rightColumnWidth: 56.6rem;
+.block_1 {
+  display: grid;
+  grid-template-columns: 1fr $rightColumnWidth;
+  grid-template-rows: minmax(72.4rem, 1fr);
+  background-color: $white;
+  .figure {
+  border-bottom: $rightColumnHeight solid $coral;
+  border-left: $rightColumnWidth solid transparent;
+  opacity: 0.8;
+  width: 0;
+  height: 0;
+  grid-row: 2;
+  &__container {
+    display: grid;
+    grid-template-rows: 1fr $rightColumnHeight;
+    background-color: $lightgray;
+  }
+}
+}
+.block__wrapper {
+  width: 100vw;
+}
+.text-block {
+  max-width: 65.75%;
+  margin: 0 auto;
+  &__ {
+    &subtitle {
+      margin: 18.9rem auto 0;
+    }
+    &headline {
+       margin: 0 auto 3.9rem;
+    }
+    &text {
+      margin: 2.75rem 0;
+    }
+    &container {
+    }
+  }
+}
+
+

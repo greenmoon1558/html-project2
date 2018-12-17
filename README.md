@@ -1,5 +1,5 @@
-![LAYOUT.png](https://raw.githubusercontent.com/greenmoon1558/html-project1/master/pantomax_lp_new.psd.png)
-
+[link to netlify](https://ecstatic-swirles-95c5f5.netlify.com/)
+![LAYOUT.png](https://raw.githubusercontent.com/greenmoon1558/html-projects2/dev/corporate-landing/Corporate%20Landing%20Page.psd.png)
 ## Project setup
 ```
 npm install

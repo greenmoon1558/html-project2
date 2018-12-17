@@ -1,27 +1,31 @@
 $font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans",
   "Helvetica Neue", sans-serif;
 
-@font-face {
-  font-family: "Exo - Thin";
-  font-weight: 100;
-  src: url(../fonts/Exo/Exo-Thin.ttf);
-  font-display: swap;
-}
-@font-face {
-  font-family: "Exo";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/Exo/Exo-Regular.ttf);
-  font-display: swap;
-}
 html {
   font-size: 62.5%;
 }
-@import "./_vars";
-// @import './mixin/_page-block__container';
+@import "./vars";
+@import "./mixin/headlines";
 @import "./includes/buttons";
-@import "./includes/_header";
-@import "./includes/_footer";
+
+@include text(left);
+@include subtitle(left);
+@include headline(left);
+@include text(center);
+@include subtitle(center);
+@include headline(center);
+@include name(center);
+@include position(center);
+
+@import "./includes/header";
+@import "./includes/index/block_1";
+@import "./includes/index/block_2";
+@import "./includes/index/block_3";
+@import "./includes/index/block_4";
+@import "./includes/index/block_5";
+@import "./includes/index/block_6";
+@import "./includes/buttons";
+@import "./includes/footer";
 
 * {
   box-sizing: border-box;
@@ -36,7 +40,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: $black;
+  background-color: $white;
   color: $white;
   overflow-x: hidden;
 }

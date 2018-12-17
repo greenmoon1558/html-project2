@@ -1,0 +1,32 @@
+.block_5 {
+  background-color: $grayBackground;
+  display: grid;
+  grid-template-rows: 76rem;
+  &__ {
+    &container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &wrapper {
+      width: 100vw;
+    }
+    &subtitle {
+      margin: 10.6rem auto 0.15rem;
+    }
+    &headline {
+      margin: 0.15rem auto 3.3rem;
+    }
+    &text{
+        margin: 3.3rem auto 0;
+        max-width: 64.7rem;;
+    }
+  }
+   &-picture__container {
+    text-align: center;
+    .picture {
+    }
+  }
+}
+
+

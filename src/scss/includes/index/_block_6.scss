@@ -1,0 +1,89 @@
+.block_6 {
+  background-color: $indigo;
+  display: grid;
+  grid-template-rows: 46.7rem;
+  &__ {
+    &container {
+    }
+    &wrapper {
+      width: 100vw;
+    }
+    &subtitle {
+      margin: 9.25rem auto 0.2rem;
+    }
+    &headline {
+      color: $white;
+      margin: 0.2rem auto 3.3rem;
+    }
+    &text {
+      color: $grayBackground;
+      opacity: 0.6;
+      font-weight: 400;
+      margin: 4.5rem auto 0;
+    }
+    &form {
+    }
+  }
+}
+.comment {
+  grid-column: 4;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 1.7rem 0.5rem;
+  &__ {
+    &container {
+      .picture {
+      }
+    }
+    &text {
+      margin: 0 0 0 -22px;
+      opacity: 1;
+    }
+  }
+}
+$itemHeight: 4.9rem;
+.form,
+.comment__container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(min-content, 26.3rem));
+  grid-gap: 3rem;
+  justify-content: center;
+}
+.form {
+  .form {
+    &__ {
+      &email,
+      &text,
+      &password {
+        width: 100%;
+        height: $itemHeight;
+        border-radius: 3px;
+        padding: 1.8rem 0 1.8rem 2.9rem;
+        border: 0.1rem solid rgba($white, 0.5);
+        background-color: $lightindigo;
+        color: $grayBackground;
+        &::placeholder {
+          color: $grayBackground;
+          font-family: $fontExo;
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 75px;
+          text-transform: uppercase;
+          letter-spacing: 0.064rem;
+        }
+        &:focus {
+          outline: none;
+          border: 0.1rem solid $white;
+        }
+      }
+
+      &submit {
+        margin-left: 0.4rem;
+        width: 25.8rem;
+        height: 5rem;
+        box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
+        border: 1px solid $coral;
+      }
+    }
+  }
+}

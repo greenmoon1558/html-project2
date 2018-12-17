@@ -1,0 +1,115 @@
+.footer {
+  background-color: $white;
+  display: grid;
+  grid-template-rows: 33.5rem;
+  grid-template-columns: 15rem 1fr minmax(min-content, 32.4rem);
+  &__ {
+    &wrapper {
+      display: grid;
+      grid-column: 2;
+      grid-template-columns:
+        minmax(min-content, 29.6rem) minmax(min-content, 19.8rem)
+        minmax(min-content, 19.1rem) minmax(min-content, 28.2rem);
+      justify-content: center;
+      margin-top: 8.9rem;
+    }
+    &column {
+      .picture {
+        margin: 2rem 0 0 5rem;
+      }
+    }
+    &column:first-of-type {
+      .footer__title {
+        margin-left: 5px;
+      }
+      .footer__text {
+        line-height: 2.7rem;
+      }
+    }
+    &title {
+      display: inline-block;
+      &--background {
+        background-image: url(../img/tringle.png);
+        width: 5rem;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 4.7rem;
+        line-height: 4.3rem;
+        margin: -1rem;
+        padding-left: 1.2rem;
+        background-position-x: 0.8rem;
+      }
+      margin: 0;
+      width: 100%;
+      text-align: left;
+      color: $grayHeadlineText;
+      font-family: $fontExo;
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: 0.88px;
+      &--white {
+        color: $white;
+      }
+    }
+    &text {
+      text-align: left;
+      opacity: 0.56;
+      color: $grayHeadlineText;
+      font-family: $fontExo;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 3rem;
+      margin: 1.3rem 0 0 0;
+      letter-spacing: 0.27px;
+    }
+    &form {
+      margin: 2.2rem 0 0 0.2rem;
+      display: flex;
+      .form {
+        &__ {
+          &email {
+            border-radius: 3px;
+            padding: 1.8rem 0 1.8rem 2.9rem;
+            &::placeholder {
+              opacity: 0.4;
+              color: rgba($black, 0.4);
+              font-family: $fontExo;
+              font-size: 1.6rem;
+              font-weight: 400;
+              line-height: 75px;
+              text-transform: uppercase;
+              letter-spacing: 0.064rem;
+            }
+            &:focus {
+              outline: none;
+            }
+            width: 22rem;
+            height: 4.9rem;
+            border-radius: 3px;
+            border: 1px solid #b8b8bf;
+            background-color: #f6f6f6;
+          }
+          &submit {
+            margin: 0 0 0 -5px;
+            width: 5.2rem;
+            height: 4.9rem;
+            box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
+            border-radius: 3px;
+            border: 1px solid $coral;
+            .picture {
+              margin: 5px 0 0 -3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .figure {
+    border-top: 34rem solid $coral;
+    border-left: 32.4rem solid transparent;
+    width: 0;
+    height: 0;
+    &__container {
+    }
+  }
+}

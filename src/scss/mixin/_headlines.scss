@@ -1,0 +1,71 @@
+@mixin align($property) {
+  &--#{$property} {
+    text-align: $property;
+  }
+}
+
+@mixin text($property) {
+  .text {
+    opacity: 0.66;
+    color: $grayHeadlineText;
+    font-family: $fontExo;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    letter-spacing: 0.034rem;
+    &--underline {
+      text-decoration: underline;
+    }
+    @include align($property);
+  }
+}
+
+@mixin headline($property) {
+  .headline {
+    font-size: 4rem;
+    font-weight: 500;
+    color: $grayHeadlineText;
+    font-family: $fontExo;
+    letter-spacing: 0.1rem;
+    &--pink {
+      color: $coral;
+      letter-spacing: 0.16rem;
+    }
+    &--small {
+      font-size: 2.2rem;
+    }
+    @include align($property);
+  }
+}
+@mixin subtitle($property) {
+  .subtitle {
+    color: $coral;
+    font-family: $fontExo;
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    @include align($property);
+  }
+}
+
+@mixin name($property) {
+  .name {
+    color: $white;
+    font-family: $fontExo;
+    font-size: 2.2rem;
+    letter-spacing: 0.064rem;
+    font-weight: 500;
+    @include align($property);
+  }
+}
+
+@mixin position($property) {
+  .position {
+    color: $coral;
+    font-family: $fontExo;
+    font-size: 1.6rem;
+    font-weight: 500;
+    @include align($property);
+  }
+}

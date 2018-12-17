@@ -1,24 +1,16 @@
 <header class="header container">
   <div class="video__wrapper">
     <div class="video">
-    <video autoplay loop preload="none" class="video-source video-media--hide">
-    <source src="uploads/background.mp4" type="video/mp4" />
-    <source src="uploads/background.webm" type="video/webm">
-      Your browser does not support HTML5 video.
-    </video>
-
-      <!-- <video
-       
-        autoplay
-        muted 
-        controls="controls"
+      <video
         loop
-       
+        preload="none"
+        muted
+        class="video-source video-media--hide"
       >
         <source src="uploads/background.mp4" type="video/mp4" />
-       <source src="uploads/background.webm" type="video/webm"> -->
-      <!-- </video> --> 
-
+        <source src="uploads/background.webm" type="video/webm" />
+        Your browser does not support HTML5 video.
+      </video>
       <a href="https://www.youtube.com/watch?v=zwYzKcQr9qo" class="video__link">
         <picture class="video-media__container">
           <source
@@ -44,37 +36,54 @@
           xmlns:xlink="http://www.w3.org/1999/xlink"
           width="59"
           height="59"
-          viewBox="0 0 59 59"
         >
           <defs>
             <path
               class="video__button--circle"
-              id="8ob9a"
+              id="a"
               d="M720.5 406c16.292 0 29.5 13.208 29.5 29.5S736.792 465 720.5 465 691 451.792 691 435.5s13.208-29.5 29.5-29.5z"
             />
             <path
               class="video__button--triangle"
-              id="8ob9b"
+              id="b"
               d="M731 435.5l-17 9.5v-19z"
             />
             <path
               class="video__button--pause"
-              id="8ob9c"
-              d="M731 435.5 l0 9.5l-9 0l0 -19l9.1 0z"
+              id="c"
+              d="M731 435.5v9.5h-9v-19h9.1z"
             />
             <path
               class="video__button--pause"
-              id="8ob9d"
-              d="M718 435.5 l0 9.5l-9 0l0 -19l9.1 0z"
+              id="d"
+              d="M718 435.5v9.5h-9v-19h9.1z"
             />
           </defs>
-          <g>
-            <g opacity="1" transform="translate(-691 -406)">
-              <g opacity="1"><use fill="#323969" xlink:href="#8ob9a" /></g>
-              <g opacity="1"><use fill="#f4f5f7" xlink:href="#8ob9b" /></g>
-              <g opacity="1"><use fill="#f4f5f7" xlink:href="#8ob9c" /></g>
-              <g opacity="1"><use fill="#f4f5f7" xlink:href="#8ob9d" /></g>
-            </g>
+          <g opacity="1">
+            <use
+              fill="#323969"
+              xlink:href="#a"
+              opacity="1"
+              transform="translate(-691 -406)"
+            />
+            <use
+              fill="#f4f5f7"
+              xlink:href="#b"
+              opacity="1"
+              transform="translate(-691 -406)"
+            />
+            <use
+              fill="#f4f5f7"
+              xlink:href="#c"
+              opacity="1"
+              transform="translate(-691 -406)"
+            />
+            <use
+              fill="#f4f5f7"
+              xlink:href="#d"
+              opacity="1"
+              transform="translate(-691 -406)"
+            />
           </g>
         </svg>
       </button>

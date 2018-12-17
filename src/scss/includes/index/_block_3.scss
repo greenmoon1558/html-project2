@@ -1,0 +1,40 @@
+.block_3 {
+  background-color: $white;
+  display: grid;
+  grid-template-rows: 55rem;
+  grid-template-columns: repeat(2, 1fr);
+  &__ {
+    &background {
+      grid-column: 1;
+      grid-row: 1;
+      z-index: 1;
+      background-color: $coral;
+      clip-path: polygon(0 0, 11% 0, 84% 100%, 0% 100%);
+    }
+    &headline {
+      margin: 1.2rem auto 2.9rem;
+      line-height: 5.2rem;
+    }
+    &text {
+      margin: 2.9rem auto 0;
+    }
+    &subtitle {
+      margin: 13.8rem auto 1.2rem;
+    }
+  }
+  &- {
+    &text__container {
+      max-width: 495px;
+      margin-left: 1.8rem;
+    }
+    &picture__container {
+      grid-column: 1;
+      grid-row: 1;
+      z-index: 2;
+      text-align: right;
+      .picture {
+        margin: 93px 35px 0 0;
+      }
+    }
+  }
+}

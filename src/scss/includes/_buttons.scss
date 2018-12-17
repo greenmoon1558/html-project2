@@ -8,4 +8,8 @@
   font-weight: 100;
   border: none;
   letter-spacing: 0.3rem;
+  &:focus,
+  &:active {
+    background-color: darken($coral, 3%);
+  }
 }

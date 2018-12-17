@@ -1,0 +1,41 @@
+.block_2 {
+  background-color: $grayBackground;
+  display: grid;
+  grid-template-rows: 67.5rem;
+  &__ {
+    &wrapper {
+      width: 100vw;
+    }
+    &container.tree-column__container {
+      display: grid;
+      grid-template-columns: repeat(
+        3,
+        minmax(min-content, 34.6rem)
+      ); 
+      grid-gap: 4.3rem;
+      justify-content: center;
+
+      .column {
+        &__ {
+          &headline {
+            margin: 2rem auto 0.75rem;
+            letter-spacing: 0.05rem;
+          }
+          &text {
+            margin: 0;
+          }
+          &container {
+            text-align: center;
+          }
+        }
+      }
+    }
+    &subtitle {
+      margin: 13.55rem auto 0.15rem;
+    }
+    &headline {
+      margin: 0.15rem auto 7.85rem;
+    }
+  }
+}
+

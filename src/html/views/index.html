@@ -1,23 +1,27 @@
-<% var data = {
-  title: "Project",
-  author: "Natalia Zhydejkina"
-}; %>
-<!doctype html>
+<% var data = { title: "Project", author: "Natalia Zhydejkina" }; %>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="shortcut icon" href="favicon/favicon.ico">
-  <link rel="stylesheet" href="css/style.bundle.css">
-  <title>
-    <%=data.title%>
-  </title>
-</head>
-<body>
-  <div class="home-page">
-    <%= _.template(require('./../includes/header.html'))() %>
-    <%= _.template(require('./../includes/index/block_1.html'))() %>
-  </div>
-<%= _.template(require('./../includes/footer.html'))() %>
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <title><%=data.title%></title>
+  </head>
+  <body>
+    <div class="home-page">
+      <%= _.template(require('./../includes/header.html'))() %> <%=
+      _.template(require('./../includes/index/block_1.html'))() %> <%=
+      _.template(require('./../includes/index/block_2.html'))() %> <%=
+      _.template(require('./../includes/index/block_3.html'))() %> <%=
+      _.template(require('./../includes/index/block_4.html'))() %> <%=
+      _.template(require('./../includes/index/block_5.html'))() %> <%=
+      _.template(require('./../includes/index/block_6.html'))() %>
+    </div>
+    <%= _.template(require('./../includes/footer.html'))() %>
+  </body>
+</html>

@@ -10,7 +10,7 @@
     &content {
       height: 100vh;
       width: 100vw;
-      min-height: 81rem;
+      min-height: 60rem;
       position: absolute;
       top: 0;
       left: 0;
@@ -39,7 +39,7 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  min-height: 81rem;
+  min-height: 60rem;
 }
 
 .video {
@@ -50,7 +50,7 @@
       z-index: 1;
       height: 100vh;
       width: 100%;
-      min-height: 81rem;
+      min-height: 60rem;
       position: absolute;
       top: 0;
       left: 0;
@@ -64,11 +64,6 @@
       }
       &--circle {
         opacity: 0.6;
-        &:hover,
-        &:focus,
-        &:active {
-          opacity: 1;
-        }
       }
     }
     &btn {
@@ -80,8 +75,18 @@
       height: 6rem;
       width: 6rem;
       outline: none;
+        &:hover,
+        &:focus,
+        &:active {
+          .video__button--circle {
+            opacity: 1;
+          }
+        }
        &.pause {
         .video__button{
+          &--circle {
+            opacity: 1;
+          }
           &--pause {
             opacity: 0.8;
           }
@@ -98,7 +103,7 @@
     }
     height: 100vh;
     width: 100%;
-    min-height: 81rem;
+    min-height: 60rem;
     object-fit: cover;
   }
  

@@ -1,0 +1,42 @@
+.block_4 {
+  background-color: $black;
+  display: grid;
+  grid-template-rows: 64.8rem;
+  &__ {
+    &background {
+      background-image: url(../img/background_block4.png);
+    }
+    &container.tree-column__container {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(min-content, 33.4rem));
+      grid-gap: 5.7rem;
+      justify-content: center;
+      .column {
+        &__ {
+          &name {
+            margin: 1.4rem auto 0.3rem;
+          }
+          &position{
+            margin: 0.3rem auto 2.7rem;
+          }
+          &text {
+            margin: 0;
+            color: $white;
+            opacity: 0.66;
+            font-style: oblique;
+          }
+          &container {
+            margin: 11rem auto 6.8rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  &-picture__container {
+    text-align: center;
+    .picture {
+    }
+  }
+}
+
