@@ -1,21 +1,26 @@
 .footer {
   background-color: $white;
   display: grid;
-  grid-template-rows: 33.5rem;
+  grid-template-rows: minmax(33.5rem, auto);
   grid-template-columns: 15rem 1fr minmax(min-content, 32.4rem);
   &__ {
     &wrapper {
       display: grid;
       grid-column: 2;
-      grid-template-columns:
-        minmax(min-content, 29.6rem) minmax(min-content, 19.8rem)
-        minmax(min-content, 19.1rem) minmax(min-content, 28.2rem);
+      grid-template-columns: 30% 15% 15% 30%;
+      // minmax(20rem, 28.6rem) minmax(10rem, 18.8rem)
+      //  minmax(12rem, 18.1rem) minmax(10rem, 27.2rem)
+      //  minmax(min-content, 29.6rem) minmax(min-content, 19.8rem)
+      //  minmax(min-content, 19.1rem) minmax(min-content, 28.2rem);
       justify-content: center;
-      margin-top: 8.9rem;
+      margin: 8.9rem auto;
+      grid-gap: 1rem;
     }
     &column {
+      min-width: 10rem;
       .picture {
         margin: 2rem 0 0 5rem;
+        width: 50%;
       }
     }
     &column:first-of-type {
@@ -23,7 +28,7 @@
         margin-left: 5px;
       }
       .footer__text {
-        line-height: 2.7rem;
+        line-height: 1.875vmax;
       }
     }
     &title {
@@ -44,11 +49,12 @@
       text-align: left;
       color: $grayHeadlineText;
       font-family: $fontExo;
-      font-size: 2.2rem;
+      font-size: 1.53vmax;
       font-weight: 800;
       letter-spacing: 0.88px;
       &--white {
         color: $white;
+        font-size: 2.2rem;
       }
     }
     &text {
@@ -56,25 +62,27 @@
       opacity: 0.56;
       color: $grayHeadlineText;
       font-family: $fontExo;
-      font-size: 1.4rem;
+      font-size: 1vmax;
       font-weight: 500;
-      line-height: 3rem;
+      line-height: 2.085vmax;
       margin: 1.3rem 0 0 0;
       letter-spacing: 0.27px;
     }
     &form {
       margin: 2.2rem 0 0 0.2rem;
       display: flex;
+      box-shadow: 0px 0px 3.5rem 1px rgba(255, 255, 255, 0.4);
       .form {
         &__ {
           &email {
             border-radius: 3px;
             padding: 1.8rem 0 1.8rem 2.9rem;
+            font-size: 1.2vmax;
             &::placeholder {
               opacity: 0.4;
               color: rgba($black, 0.4);
               font-family: $fontExo;
-              font-size: 1.6rem;
+              font-size: 1.2vmax;
               font-weight: 400;
               line-height: 75px;
               text-transform: uppercase;
@@ -83,21 +91,22 @@
             &:focus {
               outline: none;
             }
-            width: 22rem;
-            height: 4.9rem;
+            width: 15.27vmax;
+            height: 3.403vmax;
             border-radius: 3px;
             border: 1px solid #b8b8bf;
             background-color: #f6f6f6;
           }
           &submit {
             margin: 0 0 0 -5px;
-            width: 5.2rem;
-            height: 4.9rem;
+            width: 3.62vmax;
+            height: 3.403vmax;
             box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
             border-radius: 3px;
             border: 1px solid $coral;
             .picture {
               margin: 5px 0 0 -3px;
+              width: 50%;
             }
           }
         }
@@ -109,7 +118,92 @@
     border-left: 32.4rem solid transparent;
     width: 0;
     height: 0;
-    &__container {
+  }
+}
+@media (max-width: 64rem) {
+  .footer {
+    background-color: transparent;
+    grid-template-rows: max-content;
+    grid-template-columns: 1fr;
+    &__ {
+      &wrapper {
+        margin: 8.9rem 2rem 3rem;
+        grid-column: 1;
+        grid-gap: 2rem;
+        max-width: calc(100vw - 4rem);
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &column {
+        max-width: 27rem;
+        margin-bottom: 3rem;
+        margin-right: 1.5rem;
+      }
     }
+    .figure {
+      &__ {
+        &wrapper {
+          grid-column: 1;
+        }
+        &container {
+          position: absolute;
+          width: 100%;
+          z-index: -1;
+          overflow: hidden;
+          padding-left: calc(100vw - 32rem);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 90rem) {
+  .footer {
+    &__ {
+      &wrapper {
+        grid-template-columns:
+          minmax(17rem, 28.6rem)
+          minmax(10rem, 18.8rem)
+          minmax(12rem, 18.1rem)
+          minmax(25rem, 27.2rem);
+      }
+      &title {
+        font-size: 2.2rem;
+      }
+      &text {
+        font-size: 1.4rem;
+        line-height: 3rem;
+      }
+      &column:first-of-type {
+        .footer__text {
+          line-height: 1.875vmax;
+        }
+      }
+      &form {
+        .form {
+          &__ {
+            &submit {
+              width: 5.2rem;
+              .picture {
+                width: auto;
+              }
+              height: 4.9rem;
+            }
+            &email {
+              width: 22rem;
+              font-size: 1.6rem;
+              height: 4.9rem;
+              &::placeholder {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 36rem) {
+  .footer__wrapper {
+    justify-content: space-around;
   }
 }

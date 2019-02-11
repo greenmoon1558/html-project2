@@ -3,6 +3,7 @@ $font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans",
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 @import "./vars";
 @import "./mixin/headlines";
@@ -16,6 +17,7 @@ html {
 @include headline(center);
 @include name(center);
 @include position(center);
+@include maxWidthHeadlines();
 
 @import "./includes/header";
 @import "./includes/index/block_1";
@@ -36,11 +38,13 @@ html {
   -ms-user-select: none;
   user-select: none;
 }
-
+.home-page{
+  width: 100vw;
+}
 body {
   margin: 0;
   padding: 0;
   background-color: $white;
   color: $white;
-  overflow-x: hidden;
+  overflow: hidden;
 }

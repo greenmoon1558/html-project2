@@ -1,10 +1,14 @@
 .header {
   display: flex;
   align-items: center;
+  svg{
+    width: 100%;
+    height: 100%;
+  }
   &__ {
     &button {
-      width: 19rem;
-      height: 5rem;
+      width: 13.2vmax;
+      height: 3.4725vmax;
       margin: 3.8rem auto 1.5rem;
     }
     &content {
@@ -13,6 +17,7 @@
       min-height: 60rem;
       position: absolute;
       top: 0;
+      padding: 0 2rem;
       left: 0;
       z-index: 2;
       background-color: rgba($white, 0.5);
@@ -21,13 +26,14 @@
       flex-direction: column;
     }
     &headline {
-      max-width: 74rem;
-      margin: 21.25rem auto 4rem;
+      max-width: 50vmax;
+      //margin: 14.76vw auto 4rem;
+      margin: 35vh auto 4rem;
       color: $grayHeadlineText;
       font-family: $fontExoThin;
-      font-size: 6rem;
+      font-size: 4.17vmax;
       font-weight: 400;
-      line-height: 7.7rem;
+      line-height: 5.34vmax;
       letter-spacing: 0.2rem;
     }
   }
@@ -72,18 +78,18 @@
       background-color: transparent;
       padding: 0;
       margin: 0;
-      height: 6rem;
-      width: 6rem;
+      height: 4.17vmax;
+      width: 4.17vmax;
       outline: none;
-        &:hover,
-        &:focus,
-        &:active {
-          .video__button--circle {
-            opacity: 1;
-          }
+      &:hover,
+      &:focus,
+      &:active {
+        .video__button--circle {
+          opacity: 1;
         }
-       &.pause {
-        .video__button{
+      }
+      &.pause {
+        .video__button {
           &--circle {
             opacity: 1;
           }
@@ -106,15 +112,38 @@
     min-height: 60rem;
     object-fit: cover;
   }
- 
-  
 }
-
 .footnote {
   opacity: 0.6;
   color: $grayHeadlineText;
   font-family: $fontExo;
-  font-size: 1.4rem;
+  font-size: 1vmax;
   font-weight: 400;
 }
-
+@media (max-width: 90rem) {
+  .footnote {
+    font-size: 1.4rem;
+  }
+  .video__btn {
+    height: 6rem;
+    width: 6rem;
+  }
+  .header__ {
+    &button {
+      width: 19rem;
+      height: 5rem;
+    }
+    &headline {
+      margin: 21.25rem auto 4rem;
+      font-size: 6rem;
+      max-width: 74rem;
+      line-height: 7.7rem;
+    }
+  }
+}
+@media (max-width: 48rem) {
+  .header__headline {
+    font-size: 4rem;
+    line-height: 4.7rem;
+  }
+}

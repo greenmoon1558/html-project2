@@ -69,3 +69,20 @@
     @include align($property);
   }
 }
+@mixin maxWidthHeadlines(){
+@media (min-width: 90rem) {
+  .subtitle, .text, .position{
+    font-size: 1.2vmax;
+  }
+  .text{
+    line-height: 1.805vmax;
+  }
+ .headline {
+    font-size: 2.8vmax;
+    &--small {
+      font-size: 1.53vmax;
+    }
+
+  }
+}
+}

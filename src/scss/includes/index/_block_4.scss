@@ -1,27 +1,29 @@
 .block_4 {
   background-color: $black;
   display: grid;
-  grid-template-rows: 64.8rem;
+  grid-template-rows: minmax(64.8rem, auto);
   &__ {
     &background {
       background-image: url(../img/background_block4.png);
     }
     &container.tree-column__container {
       display: grid;
-      grid-template-columns: repeat(3, minmax(min-content, 33.4rem));
+      grid-template-columns: repeat(3, minmax(min-content, 25%));
       grid-gap: 5.7rem;
+      margin: 0 2rem;
       justify-content: center;
       .column {
         &__ {
           &name {
             margin: 1.4rem auto 0.3rem;
           }
-          &position{
+          &position {
             margin: 0.3rem auto 2.7rem;
           }
           &text {
             margin: 0;
             color: $white;
+            max-width: 50rem;
             opacity: 0.66;
             font-style: oblique;
           }
@@ -35,8 +37,28 @@
   }
   &-picture__container {
     text-align: center;
+    margin: 2rem;
     .picture {
+      width: calc(100% - 4rem);
+      max-width: 90rem;
     }
   }
 }
-
+@media (max-width: 90rem) {
+  .block_4__container.tree-column__container {
+    grid-template-columns: repeat(3, minmax(min-content, 33.4rem));
+  }
+}
+@media (max-width: 48rem) {
+  .block_4 {
+    grid-template-rows: auto;
+    &__container.tree-column__container {
+      .column__container {
+        margin: 4rem auto;
+      }
+      grid-gap: 0rem;
+      grid-template-rows: repeat(3, min-content);
+      grid-template-columns: 1fr;
+    }
+  }
+}

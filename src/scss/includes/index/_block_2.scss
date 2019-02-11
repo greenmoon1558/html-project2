@@ -1,17 +1,15 @@
 .block_2 {
   background-color: $grayBackground;
   display: grid;
-  grid-template-rows: 67.5rem;
+  grid-template-rows: minmax(67.5rem, auto);
   &__ {
     &wrapper {
       width: 100vw;
     }
     &container.tree-column__container {
       display: grid;
-      grid-template-columns: repeat(
-        3,
-        minmax(min-content, 34.6rem)
-      ); 
+      grid-template-columns: repeat(3, minmax(min-content, 25%));
+      margin: 0 2rem 9.41vw;
       grid-gap: 4.3rem;
       justify-content: center;
 
@@ -31,11 +29,44 @@
       }
     }
     &subtitle {
+      // margin: 9.41vw 2rem 0.15rem;
       margin: 13.55rem auto 0.15rem;
     }
     &headline {
+      //margin: 0.15rem 2rem 5.46vw;
       margin: 0.15rem auto 7.85rem;
     }
   }
 }
-
+@media (max-width: 90rem) {
+  .block_2 {
+    &__ {
+      &container.tree-column__container {
+        grid-template-columns: repeat(3, minmax(min-content, 34.6rem));
+      }
+      &subtitle {
+        margin: 9.41vw 2rem 0.15rem;
+      }
+      &headline {
+        margin: 0.15rem 2rem 5.46vw;
+      }
+    }
+  }
+}
+@media (max-width: 64rem) {
+  .block_2 {
+    grid-template-rows: auto;
+  }
+}
+@media (max-width: 48rem) {
+  .block_2 {
+    &__container.tree-column__container {
+      .column__text {
+        margin: 0 auto;
+        max-width: 50rem;
+      }
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+}

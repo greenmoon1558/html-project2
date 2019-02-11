@@ -1,32 +1,52 @@
 .block_5 {
   background-color: $grayBackground;
   display: grid;
-  grid-template-rows: 76rem;
+  grid-template-rows: minmax(76rem, auto);
   &__ {
     &container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     &wrapper {
       width: 100vw;
     }
     &subtitle {
+      //margin: 7.3611vw auto 0.15rem;
       margin: 10.6rem auto 0.15rem;
     }
     &headline {
       margin: 0.15rem auto 3.3rem;
     }
-    &text{
-        margin: 3.3rem auto 0;
-        max-width: 64.7rem;;
+    &text {
+      margin: 3.3rem auto;
+      max-width: 50vmax;
     }
   }
-   &-picture__container {
-    text-align: center;
-    .picture {
+  &- {
+    &text__container {
+      margin: 0 2rem;
+    }
+    &picture__container {
+      text-align: center;
+      .picture {
+        max-width: 100%;
+      }
     }
   }
 }
-
-
+@media (max-width: 90rem) {
+  .block_5__ {
+    &subtitle {
+      margin: 7.3611vw auto 0.15rem;
+    }
+    &text {
+      max-width: 64.7rem;
+    }
+  }
+}
+@media (max-width: 48rem) {
+  .block_5 {
+    grid-template-rows: min-content;
+  }
+}

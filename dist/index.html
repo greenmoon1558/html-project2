@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width"
     />
 
     <link rel="shortcut icon" href="favicon/favicon.ico" />
@@ -18,6 +18,7 @@
   <div class="video__wrapper">
     <div class="video">
       <video
+        poster="img/video_preload.jpg"
         loop
         preload="none"
         muted
@@ -31,12 +32,12 @@
         <picture class="video-media__container">
           <source
             class="video-media__source"
-            srcset="https://i.ytimg.com/vi_webp/zwYzKcQr9qo/maxresdefault.webp"
+            srcset="img/video_preload.webp"
             type="image/webp"
           />
           <img
             class="video-media"
-            src="https://i.ytimg.com/vi/zwYzKcQr9qo/maxresdefault.jpg"
+            src="img/video_preload.jpg"
             alt="nature video image"
           />
         </picture>
@@ -50,8 +51,7 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="59"
-          height="59"
+          viewBox="0 0 59 59"
         >
           <defs>
             <path
@@ -127,7 +127,21 @@
         </div>
     </div>
     <div class="figure__container">
-        <div class="figure"></div>
+        <div class="figure">
+            <div class="text-block__container">
+                <p class="text-block__text text text--left">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+                    vestibulum.
+                    Donec id elit non mi porta gravida at
+                    eget metus. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.
+                    Vestibulum id ligula
+                    porta felis euismod semper.</p>
+            
+                <p class="text-block__text text text--left">Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.
+                    Donec
+                    ullamcorper nulla non metus auctor fringilla.
+                    Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue.</p>
+            </div>
+        </div>
     </div>
 </section> <section class="block_2 block_2__wrapper">
     <div class="block-background">
@@ -164,26 +178,45 @@
     </div>
 </section> <section class="block_3 block__wrapper">
   <div class="block_3__background">
-    </div>
-    <div class="block_3-picture__container">
-      <picture class="picture__container">
-        <source
-          class="picture__source"
-          srcset="img/macbook.webp"
-          type="image/webp"
-        />
-        <img class="picture" src="img/macbook.png" alt="mackbook image" />
-      </picture>
-    </div>
+      <div class="block_3-text__container">
+        <h3 class="block_3__subtitle subtitle subtitle--left">
+          New design
+        </h3>
+        <h1 class="block_3__headline headline headline-left">
+          Resposive design, just need your tap
+          <span class="headline--pink">....</span>
+        </h1>
+        <p class="block_3__text text text--left">
+          Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+          vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur
+          blandit tempus porttitor. Etiasem malesuada magn. Vestibulum felis euismod
+          semper.
+        </p>
+      </div>
+  </div>
+  <div class="block_3-picture__container">
+    <picture class="picture__container">
+      <source
+        class="picture__source"
+        srcset="img/macbook.webp"
+        type="image/webp"
+      />
+      <img class="picture" src="img/macbook.png" alt="mackbook image" />
+    </picture>
+  </div>
   <div class="block_3-text__container">
-<h3 class="block_3__subtitle subtitle subtitle--left">New design</h3>
-<h1 class="block_3__headline headline headline-left">
-Resposive design, just need your tap
-    <span class="headline--pink">....</span>
-</h1>
+    <h3 class="block_3__subtitle subtitle subtitle--left">
+      New design
+    </h3>
+    <h1 class="block_3__headline headline headline-left">
+      Resposive design, just need your tap
+      <span class="headline--pink">....</span>
+    </h1>
     <p class="block_3__text text text--left">
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at
-eget metus. Curabitur blandit tempus porttitor. Etiasem malesuada magn. Vestibulum felis euismod semper.
+      Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+      vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur
+      blandit tempus porttitor. Etiasem malesuada magn. Vestibulum felis euismod
+      semper.
     </p>
   </div>
 </section>
@@ -304,10 +337,10 @@ eget metus. Curabitur blandit tempus porttitor. Etiasem malesuada magn. Vestibul
         <picture class="picture__container">
           <source
             class="picture__source"
-            srcset="img/ARROW.webp"
+            srcset="img/arrow.webp"
             type="image/webp"
           />
-          <img class="picture" src="img/ARROW.png" alt="arrow image" />
+          <img class="picture" src="img/arrow.png" alt="arrow image" />
         </picture>
         <span class="comment__text block_6__text text text--center"
           >30 days free trial for all.</span
@@ -387,7 +420,50 @@ eget metus. Curabitur blandit tempus porttitor. Etiasem malesuada magn. Vestibul
     </div>
     </div>
     <div class="figure__container">
-        <div class="figure"></div>
+        <div class="figure">
+            <div class="footer__wrapper">
+                <div class="footer__column">
+                    <p class="footer__title">Start <span class="footer__title--white footer__title--background">Ex</span></p>
+                    <p class="footer__text">
+                        Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.<br />
+                        USA & CAN: 1-888-123-4567<br />
+                        Address: 34 Brokel Rd. NY<br />
+                    </p>
+                </div>
+                <div class="footer__column">
+                    <p class="footer__title">Support</p>
+                    <p class="footer__text">
+                        Help Center<br />
+                        Get Started<br />
+                        Contact US<br />
+                    </p>
+                </div>
+                <div class="footer__column">
+                    <p class="footer__title">About US</p>
+                    <p class="footer__text">
+                        About Us<br />
+                        Terms of Use<br />
+                        Privacy Policy<br />
+                    </p>
+                </div>
+                <div class="footer__column">
+                    <p class="footer__title">Get Newsletter</p>
+                    <form class="footer__form">
+                        <input type="email" name="email" class="form__email" placeholder="email" />
+                        <button type="submit" class="button form__submit">
+                            <picture class="picture__container">
+                                <source class="picture__source" srcset="img/send_icon.webp" type="image/webp" />
+                                <img class="picture" src="img/send_icon.png" alt="mackbook image" />
+                            </picture>
+                        </button>
+                    </form>
+                    <picture class="picture__container">
+                        <source class="picture__source" srcset="img/Social_Icon.webp" type="image/webp" />
+                        <img class="picture" src="img/Social_Icon.png" alt="mackbook image" />
+                    </picture>
+                </div>
+            </div>
+        </div>
     </div>
 
 </footer>
