@@ -3,8 +3,6 @@
   display: grid;
   grid-template-rows: minmax(46.7rem, auto);
   &__ {
-    &container {
-    }
     &wrapper {
       width: 100vw;
     }
@@ -32,10 +30,6 @@
   align-items: flex-start;
   margin: 0 0 1.7rem 0.5rem;
   &__ {
-    &container {
-      .picture {
-      }
-    }
     &text {
       margin: 0 0 0 -22px;
       opacity: 1;

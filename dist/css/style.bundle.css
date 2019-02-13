@@ -133,6 +133,25 @@ html {
     .headline--small {
       font-size: 1.53vmax; } }
 
+#error {
+  background-color: rgba(185, 14, 14, 0.6);
+  position: fixed;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  font-size: 2vmax;
+  will-change: transform;
+  transform: translateX(0%);
+  transition: transform 1s, opacity 0.5s; }
+
+.js-hide {
+  opacity: 0;
+  transform: translateX(100%); }
+
 .header {
   display: flex;
   align-items: center; }

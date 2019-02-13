@@ -7,6 +7,9 @@
       name="viewport"
       content="width=device-width"
     />
+    <meta name="Description" content="Author: N.A. Zhydejkina,
+    Illustrator: Shekh Al Raihan, Category: Web Page,
+    Length: 1 page">
 
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="stylesheet" href="css/style.bundle.css" />
@@ -14,6 +17,7 @@
   </head>
   <body>
     <div class="home-page">
+      <%= _.template(require('./../includes/error.html'))() %>
       <%= _.template(require('./../includes/header.html'))() %> <%=
       _.template(require('./../includes/index/block_1.html'))() %> <%=
       _.template(require('./../includes/index/block_2.html'))() %> <%=

@@ -1,3 +1,4 @@
-import "normalize.css";
-import video from "./video.js";
-video();
+import 'normalize.css';
+import initVideo from './video';
+
+initVideo();

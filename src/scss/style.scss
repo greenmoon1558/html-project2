@@ -19,6 +19,7 @@ html {
 @include position(center);
 @include maxWidthHeadlines();
 
+@import "./includes/error";
 @import "./includes/header";
 @import "./includes/index/block_1";
 @import "./includes/index/block_2";
